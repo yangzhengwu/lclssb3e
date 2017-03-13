@@ -1,0 +1,7 @@
+sed '/^$/d' data1.txt
+sed '/header/{ n; d }' data1.txt
+sed '/first/{ N; s/\n/ / }' data2.txt
+sed 'N; s/System Administrator/Desktop User/' data3.txt
+sed 'N; s/System.Administrator/Desktop User/' data3.txt
+sed 'N; /System\nAdministrator/d' data4.txt
+sed 'N; /System\nAdministrator/D' data4.txt
